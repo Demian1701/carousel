@@ -1,0 +1,72 @@
+#carousel-container{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.left-arrow-container, .right-arrow-container{
+    position: absolute;
+    top: 47.5%;
+    width: 25px;
+    height: 43px;
+    cursor: pointer;
+}
+
+.left-arrow-container{
+    left: 30px;
+}
+
+.right-arrow-container{
+    right: 30px;
+}
+
+.left-arrow-container img, .right-arrow-container img{
+    height: 100%;
+    width: 100%;
+}
+
+article{
+    width: 280px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    background-color: rebeccapurple;
+}
+
+.carousel-item{
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: -999;
+    transition-duration: 500ms;
+}
+
+.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.dots-container{
+    position: absolute;
+    display: flex;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dots-container .dot-item{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 50%;
+    border: 1px solid rgb(67, 67, 67);
+    cursor: pointer;
+}
+
+.dots-container .dot-item.active{
+    background-color: grey
+}
