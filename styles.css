@@ -3,7 +3,7 @@
     margin-bottom: 35px;
 }
 
-.left-arrow-container, .right-arrow-container{
+#carousel-container .left-arrow-container, #carousel-container .right-arrow-container{
     position: absolute;
     top: 47.5%;
     width: 25px;
@@ -11,20 +11,20 @@
     cursor: pointer;
 }
 
-.left-arrow-container{
+#carousel-container .left-arrow-container{
     left: 30px;
 }
 
-.right-arrow-container{
+#carousel-container .right-arrow-container{
     right: 30px;
 }
 
-.left-arrow-container img, .right-arrow-container img{
+#carousel-container .left-arrow-container img, #carousel-container .right-arrow-container img{
     height: 100%;
     width: 100%;
 }
 
-article{
+#carousel-container article{
     width: 280px;
     height: 300px;
     padding: 10px;
@@ -33,7 +33,7 @@ article{
     background-color: rebeccapurple;
 }
 
-.carousel-item{
+#carousel-container .carousel-item{
     position: absolute;
     top:0;
     left: 50%;
@@ -43,12 +43,12 @@ article{
     transition-duration: 500ms;
 }
 
-.active{
+#carousel-container .carousel-item.active{
     opacity: 1;
     z-index: 1;
 }
 
-.dots-container{
+#carousel-container .dots-container{
     position: absolute;
     display: flex;
     bottom: -35px;
@@ -56,7 +56,7 @@ article{
     transform: translateX(-50%);
 }
 
-.dots-container .dot-item{
+#carousel-container .dots-container .dot-item{
     display: block;
     width: 15px;
     height: 15px;
@@ -67,6 +67,6 @@ article{
     cursor: pointer;
 }
 
-.dots-container .dot-item.active{
+#carousel-container .dots-container .dot-item.active{
     background-color: grey
 }
